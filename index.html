@@ -1,949 +1,874 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- ============================================================
+       SEO META  —  edit the text inside the quotes
+  ============================================================ -->
   <title>Azubifly | Ausbildung in Germany for International Applicants</title>
-  <meta name="description" content="Azubifly helps international applicants understand the German Ausbildung system and connects them with companies offering vocational training opportunities in Germany." />
-  <meta name="keywords" content="Ausbildung in Germany, vocational training in Germany, Ausbildung for foreigners, Ausbildung in Deutschland, internationale Auszubildende, Ausbildung für Ausländer, German companies hiring trainees, international trainees Germany, Ausbildung visa Germany, healthcare Ausbildung Germany, hotel Ausbildung Germany, technical Ausbildung Germany" />
+  <meta name="description" content="Azubifly helps young people from abroad start an Ausbildung (vocational training) in Germany. Learn how it works, who can apply, and the steps to start your journey." />
+  <meta name="keywords" content="Ausbildung in Germany, vocational training in Germany, Ausbildung for foreigners, work and study in Germany, German apprenticeship, visa for Ausbildung Germany, international trainees Germany, Ausbildung in Deutschland" />
+  <meta name="author" content="Azubifly" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Azubifly | Ausbildung in Germany for International Applicants" />
-  <meta property="og:description" content="Connecting international applicants with German companies offering Ausbildung opportunities." />
+  <!-- Canonical — replace with your live domain -->
+  <link rel="canonical" href="https://www.azubifly.com/" />
+
+  <!-- ============================================================
+       OPEN GRAPH / SOCIAL SHARING
+       Replace og:image with a 1200x630 image of your own.
+  ============================================================ -->
+  <meta property="og:title" content="Azubifly | Start Your Ausbildung in Germany" />
+  <meta property="og:description" content="We help international talent understand and start vocational training (Ausbildung) in Germany. Clear steps. Honest guidance." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.azubifly.com/" />
+  <meta property="og:image" content="https://www.azubifly.com/og-image.jpg" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:locale:alternate" content="de" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Azubifly | Start Your Ausbildung in Germany" />
+  <meta name="twitter:description" content="We help international talent start vocational training (Ausbildung) in Germany." />
+  <meta name="twitter:image" content="https://www.azubifly.com/og-image.jpg" />
 
+  <!-- Fonts (with system fallback so the page never breaks if blocked) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       STRUCTURED DATA FOR GOOGLE + AI TOOLS (SIO)
+       This is what ChatGPT / Claude / Perplexity / Google AI read.
+  ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Azubifly",
-    "description": "Azubifly helps international applicants understand the Ausbildung system and connect with suitable opportunities in Germany.",
-    "email": "ms@multikultur",
+    "url": "https://www.azubifly.com/",
+    "description": "Azubifly helps young people from abroad start an Ausbildung (vocational training) in Germany with clear guidance and honest support.",
+    "email": "ms@multikultur.net",
+    "areaServed": "Worldwide",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Helmholtzstraße 50",
       "postalCode": "50825",
-      "addressLocality": "Ehrenfeld",
-      "addressCountry": "Germany"
+      "addressLocality": "Cologne",
+      "addressRegion": "North Rhine-Westphalia",
+      "addressCountry": "DE"
     }
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Support for international Ausbildung applicants in Germany",
+    "provider": { "@type": "Organization", "name": "Azubifly" },
+    "areaServed": "Germany",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "International applicants, families, and German companies"
+    },
+    "description": "Orientation, application support and matching between international applicants and German companies offering Ausbildung (vocational training)."
+  }
+  </script>
+
+  <!-- FAQ schema: mirrors the on-page FAQ so AI tools can quote it directly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is Ausbildung in Germany?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ausbildung is Germany's vocational training system. It combines paid practical work in a company with classes at a vocational school. After 2 to 3.5 years you earn a recognized professional qualification." } },
+      { "@type": "Question", "name": "Can foreigners do Ausbildung in Germany?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. International applicants can do an Ausbildung in Germany. The exact requirements depend on the profession, the company, your language level, your country of origin and your personal situation." } },
+      { "@type": "Question", "name": "Do I need German language skills?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. Many companies and vocational schools ask for German at around B1 to B2 level, because training and daily work mostly happen in German. Some technical and IT roles are more flexible." } },
+      { "@type": "Question", "name": "Do I get paid during Ausbildung?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, in most cases. Trainees receive a monthly training salary that usually increases each year. The exact amount depends on the profession, region and company." } },
+      { "@type": "Question", "name": "How long does Ausbildung take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most Ausbildung programs take 2 to 3.5 years, depending on the profession. Strong performance can sometimes shorten the duration." } },
+      { "@type": "Question", "name": "Can I stay in Germany after Ausbildung?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Often yes. Many people who complete an Ausbildung continue working in Germany, and there are residence options for qualified workers. The exact rules depend on your situation and current German law." } },
+      { "@type": "Question", "name": "What documents do I need?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typically a valid passport, your school certificates (often with certified translations), a CV, language certificates, and the company training contract. The exact list depends on the profession and your country." } },
+      { "@type": "Question", "name": "Do I need a visa for Ausbildung in Germany?",
+        "acceptedAnswer": { "@type": "Answer", "text": "If you live outside the EU, you usually need a national visa for vocational training before you arrive. Requirements depend on your nationality and personal situation, so always check with the German embassy in your country." } },
+      { "@type": "Question", "name": "Is Ausbildung the same as university?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. University is mostly academic study with little or no pay. Ausbildung is practical, paid training inside a real company combined with vocational school, leading to a job-ready qualification." } },
+      { "@type": "Question", "name": "Which Ausbildung jobs are popular in Germany?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In-demand fields include healthcare and nursing, hospitality, IT, logistics, retail, technical and industrial professions, skilled trades, and office and business roles. Demand varies by region and year." } }
+    ]
+  }
+  </script>
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    /* ============================================================
+       DESIGN TOKENS  —  change the brand colours here once
+    ============================================================ */
+    :root{
+      --navy:#0B2545;        /* trust / headings / dark sections */
+      --navy-2:#10325f;
+      --blue:#1D6FE0;        /* primary action */
+      --blue-dark:#155bbd;
+      --sky:#E8F1FF;         /* light international blue */
+      --sky-2:#D5E6FF;
+      --accent:#FF8A3D;      /* warm friendly orange */
+      --accent-2:#FFB066;
+      --yellow:#FFC23D;
+      --ink:#0B2545;         /* main text on light */
+      --body:#475569;        /* secondary text */
+      --muted:#6B7892;
+      --line:#E6ECF4;        /* borders */
+      --bg:#FFFFFF;
+      --bg-soft:#F4F7FB;     /* light grey section */
+      --radius:22px;
+      --shadow:0 18px 50px rgba(11,37,69,.08);
+      --shadow-sm:0 8px 24px rgba(11,37,69,.06);
+      --maxw:1140px;
+      --font-display:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     }
 
-    html {
-      scroll-behavior: smooth;
+    *{box-sizing:border-box; margin:0; padding:0;}
+    html{scroll-behavior:smooth; scroll-padding-top:90px;}
+    body{
+      font-family:var(--font-body);
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit; text-decoration:none;}
+    img{max-width:100%; display:block;}
+    h1,h2,h3,h4{font-family:var(--font-display); color:var(--ink); line-height:1.1; letter-spacing:-.02em;}
+
+    .container{width:min(var(--maxw),92%); margin:0 auto;}
+
+    /* Accessibility: skip link + visible focus */
+    .skip{position:absolute; left:-9999px; top:0; background:var(--navy); color:#fff; padding:12px 18px; border-radius:0 0 12px 0; z-index:100;}
+    .skip:focus{left:0;}
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible{
+      outline:3px solid var(--accent); outline-offset:2px; border-radius:8px;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f6f8fb;
-      color: #172033;
-      line-height: 1.6;
+    /* ---------- Buttons ---------- */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:14px 24px; border-radius:999px; font-family:var(--font-display);
+      font-weight:700; font-size:.98rem; border:none; cursor:pointer;
+      transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
     }
+    .btn-primary{background:var(--accent); color:#3a1a00; box-shadow:0 12px 26px rgba(255,138,61,.35);}
+    .btn-primary:hover{transform:translateY(-2px); background:var(--accent-2);}
+    .btn-blue{background:var(--blue); color:#fff; box-shadow:0 12px 26px rgba(29,111,224,.3);}
+    .btn-blue:hover{transform:translateY(-2px); background:var(--blue-dark);}
+    .btn-ghost{background:#fff; color:var(--navy); border:1.5px solid var(--line);}
+    .btn-ghost:hover{transform:translateY(-2px); border-color:var(--blue);}
+    .btn-light{background:rgba(255,255,255,.14); color:#fff; border:1.5px solid rgba(255,255,255,.28);}
+    .btn-light:hover{transform:translateY(-2px); background:rgba(255,255,255,.22);}
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    /* ---------- Header / nav ---------- */
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
     }
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:18px; height:74px;}
+    .logo{font-family:var(--font-display); font-weight:800; font-size:1.35rem; color:var(--navy); letter-spacing:-.03em; display:flex; align-items:center; gap:8px;}
+    .logo span{color:var(--accent);}
+    .logo .mark{width:30px; height:30px; flex:0 0 auto;}
+    .nav-links{display:flex; gap:20px; align-items:center; font-size:.92rem; color:var(--body); font-weight:500;}
+    .nav-links a{padding:6px 2px; white-space:nowrap;}
+    .nav-links a:hover{color:var(--blue);}
+    .nav-right{display:flex; align-items:center; gap:12px;}
+    .lang{display:flex; gap:4px; background:var(--sky); padding:4px; border-radius:999px;}
+    .lang button{border:none; background:transparent; padding:7px 11px; border-radius:999px; cursor:pointer; font-weight:700; font-size:.82rem; color:var(--navy); font-family:var(--font-display);}
+    .lang button.active{background:var(--navy); color:#fff;}
+    .nav-cta{display:inline-flex;}
+    .menu-toggle{display:none; background:none; border:1.5px solid var(--line); border-radius:12px; padding:9px 11px; cursor:pointer; font-size:1.1rem; color:var(--navy);}
 
-    .container {
-      width: min(1120px, 92%);
-      margin: 0 auto;
-    }
+    /* ---------- Section rhythm ---------- */
+    .section{padding:84px 0;}
+    .section.tight{padding:60px 0;}
+    .soft{background:var(--bg-soft);}
+    .head{max-width:720px; margin:0 auto 44px; text-align:center;}
+    .head.left{text-align:left; margin-left:0;}
+    .eyebrow{display:inline-flex; align-items:center; gap:8px; background:var(--sky); color:var(--blue-dark); padding:7px 14px; border-radius:999px; font-family:var(--font-display); font-weight:700; font-size:.8rem; letter-spacing:.02em; text-transform:uppercase; margin-bottom:16px;}
+    .head h2{font-size:clamp(1.9rem,3.4vw,2.9rem); margin-bottom:14px; font-weight:800;}
+    .head p{color:var(--body); font-size:1.08rem;}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(20, 35, 60, 0.08);
-    }
-
-    .nav {
-      height: 76px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .logo {
-      font-weight: 800;
-      font-size: 1.4rem;
-      color: #12355b;
-      letter-spacing: -0.03em;
-    }
-
-    .logo span {
-      color: #2f80ed;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-      font-size: 0.95rem;
-      color: #4a5870;
-    }
-
-    .nav-links a:hover {
-      color: #2f80ed;
-    }
-
-    .language-switch {
-      display: flex;
-      gap: 6px;
-      background: #eef3fa;
-      padding: 5px;
-      border-radius: 999px;
-    }
-
-    .language-switch button {
-      border: none;
-      background: transparent;
-      padding: 8px 12px;
-      border-radius: 999px;
-      cursor: pointer;
-      font-weight: 700;
-      color: #53627a;
-    }
-
-    .language-switch button.active {
-      background: #12355b;
-      color: #fff;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 20px;
-      border-radius: 999px;
-      font-weight: 800;
-      border: none;
-      cursor: pointer;
-      transition: 0.2s ease;
-      font-size: 0.95rem;
-    }
-
-    .btn-primary {
-      background: #2f80ed;
-      color: white;
-      box-shadow: 0 12px 28px rgba(47, 128, 237, 0.28);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      background: #1f6fd6;
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #12355b;
-      border: 1px solid rgba(18, 53, 91, 0.14);
-    }
-
-    .btn-secondary:hover {
-      transform: translateY(-2px);
-      border-color: #2f80ed;
-    }
-
-    .hero {
-      padding: 86px 0 70px;
+    /* ---------- Hero ---------- */
+    .hero{
+      position:relative; overflow:hidden;
       background:
-        radial-gradient(circle at 15% 20%, rgba(47,128,237,0.14), transparent 28%),
-        radial-gradient(circle at 85% 10%, rgba(46,204,113,0.12), transparent 30%),
-        linear-gradient(135deg, #f7fbff 0%, #eef4fb 100%);
+        radial-gradient(900px 420px at 12% 0%, rgba(29,111,224,.10), transparent 55%),
+        radial-gradient(700px 380px at 95% 8%, rgba(255,138,61,.12), transparent 55%),
+        linear-gradient(180deg,#fff 0%, var(--bg-soft) 100%);
+      padding:74px 0 84px;
     }
+    .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:52px; align-items:center;}
+    .hero h1{font-size:clamp(2.4rem,5vw,4.1rem); font-weight:800; margin-bottom:20px;}
+    .hero h1 .hl{color:var(--blue);}
+    .hero .lead{font-size:1.18rem; color:var(--body); max-width:560px; margin-bottom:26px;}
+    .hero-actions{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:22px;}
+    .trust-row{display:flex; flex-wrap:wrap; gap:18px; color:var(--muted); font-size:.9rem; font-weight:500;}
+    .trust-row span{display:inline-flex; align-items:center; gap:7px;}
+    .trust-row .dot{color:var(--accent); font-weight:800;}
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 48px;
-      align-items: center;
+    /* Hero visual = "boarding pass" journey card (the signature element) */
+    .pass{
+      background:#fff; border-radius:26px; border:1px solid var(--line);
+      box-shadow:var(--shadow); overflow:hidden;
     }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #e7f1ff;
-      color: #1d65bd;
-      padding: 9px 14px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 0.86rem;
-      margin-bottom: 18px;
+    .pass-top{
+      background:linear-gradient(120deg,var(--navy),var(--navy-2));
+      color:#fff; padding:22px 24px; display:flex; align-items:center; justify-content:space-between;
     }
+    .pass-top .route{font-family:var(--font-display); font-weight:800; font-size:1.05rem; display:flex; align-items:center; gap:12px;}
+    .pass-top .plane{color:var(--accent);}
+    .pass-tag{background:rgba(255,255,255,.16); padding:5px 11px; border-radius:999px; font-size:.72rem; font-weight:700; letter-spacing:.05em;}
+    /* HERO PHOTO SLOT — replace the SVG below with a real photo:
+       <img src="your-photo.jpg" alt="International trainees in Germany" style="width:100%;height:200px;object-fit:cover;"> */
+    .pass-photo{height:188px; background:linear-gradient(135deg,#cfe2ff,#eaf2ff); position:relative;}
+    .pass-body{padding:24px;}
+    .pass-step{display:flex; gap:14px; align-items:flex-start; padding:14px 0; border-bottom:1px dashed var(--line);}
+    .pass-step:last-child{border-bottom:none;}
+    .pass-num{width:30px; height:30px; flex:0 0 auto; border-radius:50%; background:var(--sky); color:var(--blue-dark); font-family:var(--font-display); font-weight:800; display:grid; place-items:center; font-size:.9rem;}
+    .pass-step strong{display:block; font-family:var(--font-display); color:var(--navy); font-size:.98rem;}
+    .pass-step small{color:var(--muted); font-size:.85rem;}
 
-    h1 {
-      font-size: clamp(2.35rem, 5vw, 4.9rem);
-      line-height: 1.02;
-      letter-spacing: -0.06em;
-      color: #102238;
-      margin-bottom: 22px;
+    /* ---------- Cards & grids ---------- */
+    .grid{display:grid; gap:22px;}
+    .g2{grid-template-columns:repeat(2,1fr);}
+    .g3{grid-template-columns:repeat(3,1fr);}
+    .g4{grid-template-columns:repeat(4,1fr);}
+    .card{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow-sm);}
+    .card h3{font-size:1.2rem; margin-bottom:10px; font-weight:700;}
+    .card p{color:var(--body); font-size:.98rem;}
+    .card ul{margin-top:14px; padding-left:0; list-style:none; display:grid; gap:8px;}
+    .card li{position:relative; padding-left:26px; color:var(--body); font-size:.96rem;}
+    .card li::before{content:"✓"; position:absolute; left:0; top:0; color:var(--blue); font-weight:800;}
+    .ico{width:48px; height:48px; border-radius:14px; display:grid; place-items:center; font-size:1.4rem; margin-bottom:16px; background:var(--sky); color:var(--blue);}
+    .ico.warm{background:#FFF1E6; color:var(--accent);}
+    .tag{display:inline-flex; padding:6px 12px; border-radius:999px; background:var(--sky); color:var(--blue-dark); font-family:var(--font-display); font-size:.74rem; font-weight:800; letter-spacing:.03em; margin-bottom:12px; text-transform:uppercase;}
+    .tag.warm{background:#FFF1E6; color:var(--accent);}
+
+    /* ---------- Definition / summary box (good for SIO) ---------- */
+    .tldr{
+      background:var(--sky); border:1px solid var(--sky-2); border-left:5px solid var(--blue);
+      border-radius:16px; padding:18px 22px; margin:0 auto 36px; max-width:820px;
     }
+    .tldr b{font-family:var(--font-display); color:var(--navy);}
+    .tldr.left{margin-left:0;}
 
-    .hero p {
-      font-size: 1.15rem;
-      color: #4a5870;
-      max-width: 650px;
-      margin-bottom: 28px;
+    /* ---------- Dark section ---------- */
+    .dark{background:linear-gradient(160deg,var(--navy),#081a33); color:#fff;}
+    .dark h2, .dark h3{color:#fff;}
+    .dark .head p, .dark p, .dark li{color:rgba(255,255,255,.8);}
+    .dark .card{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.12); box-shadow:none;}
+    .dark .eyebrow{background:rgba(255,255,255,.1); color:#fff;}
+    .dark .card li::before{color:var(--accent);}
+    .dark .ico{background:rgba(255,255,255,.1); color:#fff;}
+
+    /* ---------- Timeline (How it works) with flight-path connector ---------- */
+    .timeline{display:grid; grid-template-columns:repeat(2,1fr); gap:20px 40px; position:relative;}
+    .tstep{background:#fff; border:1px solid var(--line); border-radius:18px; padding:22px 22px 22px 64px; position:relative; box-shadow:var(--shadow-sm);}
+    .tstep-n{position:absolute; left:18px; top:22px; width:34px; height:34px; border-radius:50%; background:var(--navy); color:#fff; font-family:var(--font-display); font-weight:800; display:grid; place-items:center;}
+    .tstep:nth-child(odd) .tstep-n{background:var(--blue);}
+    .tstep h3{font-size:1.08rem; margin-bottom:6px;}
+    .tstep p{font-size:.94rem;}
+
+    /* ---------- Comparison table ---------- */
+    .table-wrap{overflow-x:auto; border-radius:var(--radius); border:1px solid var(--line); box-shadow:var(--shadow-sm);}
+    table{width:100%; border-collapse:collapse; min-width:560px; background:#fff;}
+    th,td{padding:16px 18px; text-align:left; border-bottom:1px solid var(--line); font-size:.96rem;}
+    thead th{background:var(--navy); color:#fff; font-family:var(--font-display); font-weight:700;}
+    thead th:first-child{background:var(--navy);}
+    tbody th{font-family:var(--font-display); color:var(--navy); background:var(--bg-soft); font-weight:700;}
+    .col-hl{background:#FFF7F0;}
+    thead th.col-hl{background:var(--accent); color:#3a1a00;}
+    tbody tr:last-child td, tbody tr:last-child th{border-bottom:none;}
+
+    /* ---------- Checklist ---------- */
+    .check{display:grid; gap:14px;}
+    .check-item{display:flex; gap:14px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:var(--shadow-sm);}
+    .check-item .b{width:30px; height:30px; flex:0 0 auto; border-radius:9px; background:#FFF1E6; color:var(--accent); display:grid; place-items:center; font-weight:800;}
+    .check-item strong{font-family:var(--font-display); color:var(--navy); display:block; margin-bottom:2px;}
+    .check-item span{color:var(--body); font-size:.95rem;}
+
+    /* ---------- FAQ ---------- */
+    .faq{display:grid; gap:12px; max-width:860px; margin:0 auto;}
+    details{background:#fff; border:1px solid var(--line); border-radius:16px; padding:20px 22px; box-shadow:var(--shadow-sm);}
+    summary{cursor:pointer; font-family:var(--font-display); font-weight:700; color:var(--navy); font-size:1.04rem; list-style:none; display:flex; justify-content:space-between; gap:16px; align-items:center;}
+    summary::-webkit-details-marker{display:none;}
+    summary::after{content:"+"; color:var(--accent); font-size:1.5rem; font-weight:700; line-height:1;}
+    details[open] summary::after{content:"–";}
+    details p{color:var(--body); margin-top:12px; font-size:.98rem;}
+
+    /* ---------- Contact ---------- */
+    .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:start;}
+    .field{display:grid; gap:6px; margin-bottom:16px;}
+    .field label{font-family:var(--font-display); font-weight:600; font-size:.9rem; color:var(--navy);}
+    .field input, .field select, .field textarea{
+      font-family:var(--font-body); font-size:1rem; padding:13px 15px; border:1.5px solid var(--line);
+      border-radius:12px; background:#fff; color:var(--ink); width:100%;
     }
+    .field textarea{min-height:120px; resize:vertical;}
+    .contact-info .ci{display:flex; gap:14px; align-items:flex-start; margin-bottom:18px;}
+    .contact-info .ci .ico{margin-bottom:0;}
+    .contact-info address{font-style:normal; color:var(--body);}
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 22px;
+    /* ---------- Final CTA ---------- */
+    .cta-band{background:linear-gradient(125deg,var(--blue),var(--navy)); color:#fff; border-radius:30px; padding:48px; display:grid; grid-template-columns:1.2fr .8fr; gap:26px; align-items:center;}
+    .cta-band h2{color:#fff; font-size:clamp(1.8rem,3vw,2.6rem); margin-bottom:10px;}
+    .cta-band p{color:rgba(255,255,255,.85);}
+    .cta-actions{display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end;}
+
+    /* ---------- Footer ---------- */
+    footer{background:#07182f; color:#fff; padding:54px 0 30px;}
+    .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:30px;}
+    footer .logo{color:#fff;}
+    footer p, footer address, footer a{color:rgba(255,255,255,.72); font-style:normal; font-size:.95rem;}
+    footer h4{color:#fff; margin-bottom:14px; font-size:1rem;}
+    footer .fnav{display:grid; gap:9px;}
+    footer .fnav a:hover{color:var(--accent);}
+    .legal{margin-top:34px; padding-top:22px; border-top:1px solid rgba(255,255,255,.12); color:rgba(255,255,255,.6); font-size:.86rem;}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:980px){
+      .hero-grid{grid-template-columns:1fr; gap:38px;}
+      .g3,.g4{grid-template-columns:repeat(2,1fr);}
+      .timeline{grid-template-columns:1fr;}
+      .contact-grid, .cta-band, .foot-grid{grid-template-columns:1fr;}
+      .cta-actions{justify-content:flex-start;}
     }
-
-    .small-note {
-      color: #6d7b91;
-      font-size: 0.92rem;
-      max-width: 720px;
-    }
-
-    .hero-card {
-      background: white;
-      border-radius: 30px;
-      padding: 30px;
-      box-shadow: 0 24px 80px rgba(18, 53, 91, 0.12);
-      border: 1px solid rgba(18, 53, 91, 0.08);
-    }
-
-    .pathway {
-      display: grid;
-      gap: 14px;
-    }
-
-    .path-step {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      background: #f6f9fd;
-      padding: 18px;
-      border-radius: 18px;
-      border: 1px solid rgba(18, 53, 91, 0.07);
-    }
-
-    .number {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #2f80ed;
-      color: white;
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-
-    section {
-      padding: 78px 0;
-    }
-
-    .section-title {
-      max-width: 760px;
-      margin-bottom: 34px;
-    }
-
-    .section-title h2 {
-      font-size: clamp(2rem, 3vw, 3rem);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
-      color: #102238;
-      margin-bottom: 14px;
-    }
-
-    .section-title p {
-      color: #5a687d;
-      font-size: 1.06rem;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 24px;
-      padding: 28px;
-      border: 1px solid rgba(18, 53, 91, 0.08);
-      box-shadow: 0 12px 34px rgba(18, 53, 91, 0.06);
-    }
-
-    .card h3 {
-      color: #12355b;
-      font-size: 1.25rem;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #5b687b;
-    }
-
-    .card ul {
-      margin-top: 16px;
-      padding-left: 18px;
-      color: #4f5f74;
-    }
-
-    .card li {
-      margin-bottom: 8px;
-    }
-
-    .icon {
-      width: 46px;
-      height: 46px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: #e7f1ff;
-      color: #2f80ed;
-      font-size: 1.35rem;
-      margin-bottom: 18px;
-    }
-
-    .soft {
-      background: #ffffff;
-    }
-
-    .blue-section {
-      background: #102238;
-      color: white;
-    }
-
-    .blue-section .section-title h2,
-    .blue-section h3 {
-      color: white;
-    }
-
-    .blue-section .section-title p,
-    .blue-section p,
-    .blue-section li {
-      color: rgba(255, 255, 255, 0.78);
-    }
-
-    .blue-section .card {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.12);
-      box-shadow: none;
-    }
-
-    .field-card {
-      min-height: 230px;
-    }
-
-    .tag {
-      display: inline-flex;
-      padding: 7px 11px;
-      border-radius: 999px;
-      background: #eef7ff;
-      color: #1d65bd;
-      font-size: 0.82rem;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-
-    .steps {
-      counter-reset: step;
-      display: grid;
-      gap: 14px;
-    }
-
-    .step {
-      position: relative;
-      background: #f7fafd;
-      border-radius: 18px;
-      padding: 18px 18px 18px 58px;
-      border: 1px solid rgba(18, 53, 91, 0.07);
-    }
-
-    .step::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      left: 18px;
-      top: 18px;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: #2f80ed;
-      color: white;
-      font-weight: 900;
-      display: grid;
-      place-items: center;
-      font-size: 0.85rem;
-    }
-
-    .faq {
-      display: grid;
-      gap: 14px;
-    }
-
-    details {
-      background: white;
-      border-radius: 18px;
-      padding: 20px;
-      border: 1px solid rgba(18, 53, 91, 0.08);
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 800;
-      color: #12355b;
-    }
-
-    details p {
-      color: #5a687d;
-      margin-top: 12px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, #2f80ed, #12355b);
-      color: white;
-      border-radius: 34px;
-      padding: 42px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .cta h2 {
-      font-size: clamp(1.9rem, 3vw, 3rem);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-      margin-bottom: 12px;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,0.82);
-    }
-
-    .cta-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    footer {
-      background: #07111f;
-      color: white;
-      padding: 44px 0;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 30px;
-    }
-
-    footer p,
-    footer address {
-      color: rgba(255,255,255,0.72);
-      font-style: normal;
-      margin-top: 10px;
-    }
-
-    .legal-note {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.62);
-      margin-top: 24px;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      padding-top: 22px;
-    }
-
-    @media (max-width: 900px) {
-      .nav {
-        height: auto;
-        padding: 18px 0;
-        flex-wrap: wrap;
+    @media (max-width:760px){
+      .menu-toggle{display:inline-flex;}
+      .nav-links{
+        display:none; position:absolute; top:74px; left:0; right:0; background:#fff;
+        flex-direction:column; align-items:flex-start; gap:4px; padding:14px 6%; border-bottom:1px solid var(--line);
+        box-shadow:var(--shadow);
       }
-
-      .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: space-between;
-        overflow-x: auto;
-        padding-bottom: 4px;
-      }
-
-      .hero-grid,
-      .grid-2,
-      .grid-3,
-      .cta,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-actions {
-        justify-content: flex-start;
-      }
-
-      section {
-        padding: 58px 0;
-      }
+      .nav-links.open{display:flex;}
+      .nav-links a{width:100%; padding:11px 4px;}
+      .nav-cta{display:none;}
+      .g2,.g3,.g4{grid-template-columns:1fr;}
+      .section{padding:60px 0;}
+      .cta-band, .card{padding:26px;}
     }
-
-    @media (max-width: 560px) {
-      .nav-links {
-        font-size: 0.86rem;
-        gap: 16px;
-      }
-
-      .hero {
-        padding: 56px 0 48px;
-      }
-
-      .hero-card,
-      .card,
-      .cta {
-        padding: 24px;
-        border-radius: 22px;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .language-switch {
-        margin-left: auto;
-      }
+    @media (prefers-reduced-motion:reduce){
+      *{scroll-behavior:auto !important; transition:none !important;}
     }
   </style>
-
 </head>
 
-<body>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       NOTE ON LANGUAGE SWITCHER
+       Any element with BOTH data-en and data-de is translated by the
+       EN/DE buttons. Navigation, headings, summaries, CTAs and FAQ
+       questions are translated. Long answers are English-only for now —
+       to translate one, just add a data-de="..." attribute to it.
+  ============================================================ -->
+
+  <!-- ===================== HEADER / NAV ===================== -->
   <header>
     <div class="container nav">
-      <a href="#top" class="logo">Azubi<span>fly</span></a>
+      <a href="#top" class="logo" aria-label="Azubifly home">
+        <!-- Simple paper-plane logo mark (SVG, no image needed) -->
+        <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M2 12 22 3l-4 18-6-5-3 3v-5l-7-2Z" fill="#FF8A3D"/>
+          <path d="M22 3 9 14" stroke="#0B2545" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        Azubi<span>fly</span>
+      </a>
 
-```
-  <nav class="nav-links" aria-label="Main navigation">
-    <a href="#applicants" data-en="Applicants" data-de="Bewerber">Applicants</a>
-    <a href="#companies" data-en="Companies" data-de="Unternehmen">Companies</a>
-    <a href="#fields" data-en="Fields" data-de="Berufe">Fields</a>
-    <a href="#faq" data-en="FAQ" data-de="FAQ">FAQ</a>
-    <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
-  </nav>
+      <nav class="nav-links" id="navlinks" aria-label="Main navigation">
+        <a href="#top" data-en="Home" data-de="Start">Home</a>
+        <a href="#about" data-en="About" data-de="Über uns">About</a>
+        <a href="#how" data-en="How it works" data-de="Ablauf">How it works</a>
+        <a href="#ausbildung" data-en="Ausbildung" data-de="Ausbildung">Ausbildung</a>
+        <a href="#requirements" data-en="Requirements" data-de="Voraussetzungen">Requirements</a>
+        <a href="#fields" data-en="Training Fields" data-de="Berufsfelder">Training Fields</a>
+        <a href="#companies" data-en="For Companies" data-de="Für Unternehmen">For Companies</a>
+        <a href="#faq" data-en="FAQ" data-de="FAQ">FAQ</a>
+        <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
+      </nav>
 
-  <div class="language-switch" aria-label="Language switcher">
-    <button class="active" onclick="setLanguage('en')" id="btn-en">EN</button>
-    <button onclick="setLanguage('de')" id="btn-de">DE</button>
-  </div>
-</div>
-```
-
+      <div class="nav-right">
+        <div class="lang" aria-label="Language switcher">
+          <button class="active" id="btn-en" onclick="setLanguage('en')" aria-label="English">EN</button>
+          <button id="btn-de" onclick="setLanguage('de')" aria-label="Deutsch">DE</button>
+        </div>
+        <a class="btn btn-primary nav-cta" href="#contact" data-en="Apply now" data-de="Jetzt bewerben">Apply now</a>
+        <button class="menu-toggle" id="menuBtn" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
   </header>
 
-  <main id="top">
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow" data-en="International Ausbildung matching" data-de="Internationale Ausbildungs-Vermittlung">International Ausbildung matching</div>
-
-```
-      <h1
-        data-en="Ausbildung in Germany for International Applicants"
-        data-de="Ausbildung in Deutschland für internationale Bewerber">
-        Ausbildung in Germany for International Applicants
-      </h1>
-
-      <p
-        data-en="Azubifly connects international applicants with German companies offering Ausbildung opportunities. We help both sides understand the process and take realistic next steps."
-        data-de="Azubifly verbindet internationale Bewerber mit deutschen Unternehmen, die Ausbildungsplätze anbieten. Wir helfen beiden Seiten, den Prozess zu verstehen und realistische nächste Schritte zu gehen.">
-        Azubifly connects international applicants with German companies offering Ausbildung opportunities. We help both sides understand the process and take realistic next steps.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="mailto:ms@multikultur?subject=I%20am%20an%20applicant%20-%20Azubifly" data-en="I am an applicant" data-de="Ich bin Bewerber">I am an applicant</a>
-        <a class="btn btn-secondary" href="mailto:ms@multikultur?subject=I%20am%20a%20company%20-%20Azubifly" data-en="I am a company" data-de="Ich bin Unternehmen">I am a company</a>
-      </div>
-
-      <p class="small-note"
-        data-en="Clear guidance. No false promises. No guaranteed jobs, visas or residence permits."
-        data-de="Klare Orientierung. Keine falschen Versprechen. Keine Garantie für Jobs, Visa oder Aufenthaltstitel.">
-        Clear guidance. No false promises. No guaranteed jobs, visas or residence permits.
-      </p>
-    </div>
-
-    <div class="hero-card" aria-label="Ausbildung pathway">
-      <h3 data-en="The simple pathway" data-de="Der einfache Weg">The simple pathway</h3>
-      <div class="pathway" style="margin-top: 18px;">
-        <div class="path-step">
-          <div class="number">1</div>
-          <div>
-            <strong data-en="Understand Ausbildung" data-de="Ausbildung verstehen">Understand Ausbildung</strong>
-            <p data-en="Learn how vocational training in Germany works." data-de="Verstehe, wie berufliche Ausbildung in Deutschland funktioniert.">Learn how vocational training in Germany works.</p>
+          <span class="eyebrow" data-en="Ausbildung in Germany · for international talent" data-de="Ausbildung in Deutschland · für internationale Talente">Ausbildung in Germany · for international talent</span>
+          <h1 data-en="Start your Ausbildung journey in Germany" data-de="Starte deine Ausbildung in Deutschland">
+            Start your <span class="hl">Ausbildung</span> journey in Germany
+          </h1>
+          <p class="lead" data-en="Azubifly helps young people from abroad understand and start vocational training (Ausbildung) in Germany — with clear steps and honest guidance, no false promises." data-de="Azubifly hilft jungen Menschen aus dem Ausland, eine Ausbildung in Deutschland zu verstehen und zu starten — mit klaren Schritten und ehrlicher Beratung, ohne falsche Versprechen.">
+            Azubifly helps young people from abroad understand and start vocational training (Ausbildung) in Germany — with clear steps and honest guidance, no false promises.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-en="Apply now" data-de="Jetzt bewerben">Apply now</a>
+            <a class="btn btn-ghost" href="#how" data-en="See how it works" data-de="So funktioniert es">See how it works</a>
+          </div>
+          <div class="trust-row">
+            <span><span class="dot">●</span> <span data-en="Based in Cologne, Germany" data-de="Sitz in Köln, Deutschland">Based in Cologne, Germany</span></span>
+            <span><span class="dot">●</span> <span data-en="Guidance in English & German" data-de="Beratung auf Englisch & Deutsch">Guidance in English &amp; German</span></span>
+            <span><span class="dot">●</span> <span data-en="For applicants & companies" data-de="Für Bewerber & Unternehmen">For applicants &amp; companies</span></span>
           </div>
         </div>
-        <div class="path-step">
-          <div class="number">2</div>
-          <div>
-            <strong data-en="Prepare your application" data-de="Bewerbung vorbereiten">Prepare your application</strong>
-            <p data-en="Improve documents, goals and communication." data-de="Verbessere Unterlagen, Ziele und Kommunikation.">Improve documents, goals and communication.</p>
+
+        <!-- SIGNATURE VISUAL: boarding-pass style journey card -->
+        <div class="pass" role="img" aria-label="Your Ausbildung journey in three steps">
+          <div class="pass-top">
+            <div class="route"><span data-en="HOME" data-de="ZUHAUSE">HOME</span> <span class="plane">✈</span> <span>GER</span></div>
+            <div class="pass-tag" data-en="BOARDING" data-de="ABFLUG">BOARDING</div>
+          </div>
+          <!-- REPLACE THIS BLOCK with a real photo of international trainees in Germany.
+               Example: <img src="trainees.jpg" alt="International trainees in Germany"> -->
+          <div class="pass-photo" aria-hidden="true">
+            <svg viewBox="0 0 400 188" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="presentation">
+              <rect width="400" height="188" fill="#dbe9ff"/>
+              <circle cx="120" cy="70" r="26" fill="#1D6FE0" opacity=".85"/>
+              <circle cx="200" cy="70" r="26" fill="#FF8A3D" opacity=".85"/>
+              <circle cx="280" cy="70" r="26" fill="#0B2545" opacity=".85"/>
+              <path d="M70 150q130-70 260 0" stroke="#0B2545" stroke-width="2" stroke-dasharray="6 7" fill="none" opacity=".5"/>
+              <path d="M328 120l10-8-3 12 8 2-10 6Z" fill="#0B2545" opacity=".6"/>
+              <text x="200" y="178" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0B2545" opacity=".55">Photo placeholder — replace with a real image</text>
+            </svg>
+          </div>
+          <div class="pass-body">
+            <div class="pass-step">
+              <div class="pass-num">1</div>
+              <div><strong data-en="Understand Ausbildung" data-de="Ausbildung verstehen">Understand Ausbildung</strong><small data-en="Learn how paid vocational training works." data-de="Erfahre, wie die bezahlte Ausbildung funktioniert.">Learn how paid vocational training works.</small></div>
+            </div>
+            <div class="pass-step">
+              <div class="pass-num">2</div>
+              <div><strong data-en="Prepare your application" data-de="Bewerbung vorbereiten">Prepare your application</strong><small data-en="Documents, language and a clear goal." data-de="Unterlagen, Sprache und ein klares Ziel.">Documents, language and a clear goal.</small></div>
+            </div>
+            <div class="pass-step">
+              <div class="pass-num">3</div>
+              <div><strong data-en="Connect & start" data-de="Verbinden & starten">Connect &amp; start</strong><small data-en="Meet companies looking for trainees." data-de="Lerne Unternehmen kennen, die Azubis suchen.">Meet companies looking for trainees.</small></div>
+            </div>
           </div>
         </div>
-        <div class="path-step">
-          <div class="number">3</div>
-          <div>
-            <strong data-en="Connect with opportunities" data-de="Mit Chancen verbinden">Connect with opportunities</strong>
-            <p data-en="Meet companies looking for motivated trainees." data-de="Lerne Unternehmen kennen, die motivierte Azubis suchen.">Meet companies looking for motivated trainees.</p>
+      </div>
+    </section>
+
+    <!-- ===================== WHO IS THIS FOR ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Who is this for?" data-de="Für wen ist das?">Who is this for?</span>
+          <h2 data-en="Built for three groups of people" data-de="Gemacht für drei Zielgruppen">Built for three groups of people</h2>
+          <p data-en="Whether you want to come to Germany, you are a parent supporting someone, or a company looking for trainees — start here." data-de="Egal ob du nach Deutschland kommen willst, als Familie jemanden unterstützt oder als Unternehmen Azubis suchst — hier startest du.">Whether you want to come to Germany, you are a parent supporting someone, or a company looking for trainees — start here.</p>
+        </div>
+        <div class="grid g3">
+          <div class="card">
+            <div class="ico">🌍</div>
+            <h3 data-en="International candidates" data-de="Internationale Bewerber">International candidates</h3>
+            <p data-en="Young people abroad who want a real, paid path to a career in Germany." data-de="Junge Menschen im Ausland, die einen echten, bezahlten Weg in einen Beruf in Deutschland suchen.">Young people abroad who want a real, paid path to a career in Germany.</p>
+          </div>
+          <div class="card">
+            <div class="ico warm">👨‍👩‍👧</div>
+            <h3 data-en="Families" data-de="Familien">Families</h3>
+            <p data-en="Parents and relatives who want to understand the process and feel confident about it." data-de="Eltern und Angehörige, die den Prozess verstehen und sich sicher fühlen wollen.">Parents and relatives who want to understand the process and feel confident about it.</p>
+          </div>
+          <div class="card">
+            <div class="ico">🏢</div>
+            <h3 data-en="German companies" data-de="Deutsche Unternehmen">German companies</h3>
+            <p data-en="Employers who want to reach motivated international trainees for open Ausbildung positions." data-de="Arbeitgeber, die motivierte internationale Azubis für offene Ausbildungsplätze erreichen wollen.">Employers who want to reach motivated international trainees for open Ausbildung positions.</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="soft">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="A bridge between global talent and German employers" data-de="Eine Brücke zwischen internationalen Talenten und deutschen Unternehmen">A bridge between global talent and German employers</h2>
-      <p data-en="Azubifly supports applicants and companies with clear information, realistic guidance and a structured matching process." data-de="Azubifly unterstützt Bewerber und Unternehmen mit klaren Informationen, realistischer Beratung und einem strukturierten Matching-Prozess.">Azubifly supports applicants and companies with clear information, realistic guidance and a structured matching process.</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card" id="applicants">
-        <div class="icon">🌍</div>
-        <h3 data-en="For international applicants" data-de="Für internationale Bewerber">For international applicants</h3>
-        <p data-en="Understand your options and prepare for vocational training in Germany." data-de="Verstehe deine Möglichkeiten und bereite dich auf eine Ausbildung in Deutschland vor.">Understand your options and prepare for vocational training in Germany.</p>
-        <ul>
-          <li data-en="Understand the German Ausbildung system" data-de="Das deutsche Ausbildungssystem verstehen">Understand the German Ausbildung system</li>
-          <li data-en="Explore suitable career fields" data-de="Passende Berufsfelder entdecken">Explore suitable career fields</li>
-          <li data-en="Prepare CV and application documents" data-de="Lebenslauf und Bewerbungsunterlagen vorbereiten">Prepare CV and application documents</li>
-          <li data-en="Get guidance for realistic next steps" data-de="Orientierung für realistische nächste Schritte bekommen">Get guidance for realistic next steps</li>
-        </ul>
-      </div>
-
-      <div class="card" id="companies">
-        <div class="icon">🏢</div>
-        <h3 data-en="For German companies" data-de="Für deutsche Unternehmen">For German companies</h3>
-        <p data-en="Reach motivated international applicants for your open Ausbildung positions." data-de="Erreichen Sie motivierte internationale Bewerber für Ihre offenen Ausbildungsplätze.">Reach motivated international applicants for your open Ausbildung positions.</p>
-        <ul>
-          <li data-en="Reach international trainee candidates" data-de="Internationale Azubi-Kandidaten erreichen">Reach international trainee candidates</li>
-          <li data-en="Save time in early communication" data-de="Zeit in der ersten Kommunikation sparen">Save time in early communication</li>
-          <li data-en="Build an international trainee pipeline" data-de="Eine internationale Azubi-Pipeline aufbauen">Build an international trainee pipeline</li>
-          <li data-en="Present your company to suitable applicants" data-de="Ihr Unternehmen passenden Bewerbern vorstellen">Present your company to suitable applicants</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container grid-2">
-    <div class="section-title">
-      <h2 data-en="What is an Ausbildung?" data-de="Was ist eine Ausbildung?">What is an Ausbildung?</h2>
-      <p data-en="Ausbildung is Germany’s vocational training system. It combines practical work in a company with learning at a vocational school." data-de="Eine Ausbildung ist das deutsche System der beruflichen Ausbildung. Sie kombiniert praktische Arbeit im Unternehmen mit Unterricht in der Berufsschule.">Ausbildung is Germany’s vocational training system. It combines practical work in a company with learning at a vocational school.</p>
-    </div>
-
-    <div class="card">
-      <ul>
-        <li data-en="Usually takes 2 to 3.5 years" data-de="Dauert meistens 2 bis 3,5 Jahre">Usually takes 2 to 3.5 years</li>
-        <li data-en="Trainees usually receive a monthly salary" data-de="Azubis erhalten in der Regel eine monatliche Vergütung">Trainees usually receive a monthly salary</li>
-        <li data-en="Training takes place in a company and at school" data-de="Die Ausbildung findet im Unternehmen und in der Berufsschule statt">Training takes place in a company and at school</li>
-        <li data-en="After completion, trainees receive a recognized qualification" data-de="Nach Abschluss erhalten Azubis einen anerkannten Berufsabschluss">After completion, trainees receive a recognized qualification</li>
-        <li data-en="Requirements depend on the profession, company and applicant profile" data-de="Die Voraussetzungen hängen vom Beruf, Unternehmen und Bewerberprofil ab">Requirements depend on the profession, company and applicant profile</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="blue-section" id="fields">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="In-demand Ausbildung fields in Germany" data-de="Gefragte Ausbildungsbereiche in Deutschland">In-demand Ausbildung fields in Germany</h2>
-      <p data-en="Many companies struggle to fill training positions in practical, service, healthcare and technical fields. Demand can change by region, company and year." data-de="Viele Unternehmen haben Schwierigkeiten, Ausbildungsplätze in praktischen, dienstleistungsnahen, medizinischen und technischen Bereichen zu besetzen. Die Nachfrage kann je nach Region, Unternehmen und Jahr unterschiedlich sein.">Many companies struggle to fill training positions in practical, service, healthcare and technical fields. Demand can change by region, company and year.</p>
-    </div>
-
-    <div class="grid-3">
-      <div class="card field-card">
-        <span class="tag" data-en="Healthcare" data-de="Medizin">Healthcare</span>
-        <h3 data-en="Healthcare and medical assistance" data-de="Gesundheit und medizinische Assistenz">Healthcare and medical assistance</h3>
-        <p data-en="Examples: medical assistant, dental assistant, nursing-related roles, orthopedic and rehabilitation technology." data-de="Beispiele: Medizinische Fachangestellte, Zahnmedizinische Fachangestellte, pflegenahe Berufe, Orthopädie- und Rehatechnik.">Examples: medical assistant, dental assistant, nursing-related roles, orthopedic and rehabilitation technology.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Hospitality" data-de="Gastronomie">Hospitality</span>
-        <h3 data-en="Hospitality and gastronomy" data-de="Hotellerie und Gastronomie">Hospitality and gastronomy</h3>
-        <p data-en="Examples: hotel specialist, restaurant specialist, cook, kitchen and service roles." data-de="Beispiele: Hotelfach, Restaurantfach, Koch/Köchin, Küche und Service.">Examples: hotel specialist, restaurant specialist, cook, kitchen and service roles.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Technical" data-de="Technik">Technical</span>
-        <h3 data-en="Technical and industrial professions" data-de="Technische und industrielle Berufe">Technical and industrial professions</h3>
-        <p data-en="Examples: mechatronics, electronics, metal professions and technical maintenance." data-de="Beispiele: Mechatronik, Elektronik, Metallberufe und technische Instandhaltung.">Examples: mechatronics, electronics, metal professions and technical maintenance.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Skilled trades" data-de="Handwerk">Skilled trades</span>
-        <h3 data-en="Construction and skilled trades" data-de="Bau und Handwerk">Construction and skilled trades</h3>
-        <p data-en="Examples: construction-related roles, sanitary, heating and air conditioning, craft professions." data-de="Beispiele: Baunahe Berufe, Sanitär, Heizung, Klima und Handwerksberufe.">Examples: construction-related roles, sanitary, heating and air conditioning, craft professions.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Food and retail" data-de="Lebensmittel & Handel">Food and retail</span>
-        <h3 data-en="Food, retail and service" data-de="Lebensmittel, Handel und Service">Food, retail and service</h3>
-        <p data-en="Examples: bakery, food production, sales and retail service." data-de="Beispiele: Bäckerei, Lebensmittelproduktion, Verkauf und Einzelhandel.">Examples: bakery, food production, sales and retail service.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Logistics" data-de="Logistik">Logistics</span>
-        <h3 data-en="Logistics and transport" data-de="Logistik und Transport">Logistics and transport</h3>
-        <p data-en="Examples: warehouse logistics, transport-related roles and professional driving." data-de="Beispiele: Lagerlogistik, transportbezogene Berufe und Berufskraftfahrer.">Examples: warehouse logistics, transport-related roles and professional driving.</p>
-      </div>
-
-      <div class="card field-card">
-        <span class="tag" data-en="Office" data-de="Büro">Office</span>
-        <h3 data-en="Office and administration" data-de="Büro und Verwaltung">Office and administration</h3>
-        <p data-en="Examples: office management, customer service and business administration." data-de="Beispiele: Büromanagement, Kundenservice und kaufmännische Verwaltung.">Examples: office management, customer service and business administration.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="How it works" data-de="So funktioniert es">How it works</h2>
-      <p data-en="A simple process for applicants and companies." data-de="Ein einfacher Prozess für Bewerber und Unternehmen.">A simple process for applicants and companies.</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3 data-en="For applicants" data-de="Für Bewerber">For applicants</h3>
-        <div class="steps">
-          <div class="step" data-en="Tell us about your background and goals." data-de="Erzähle uns von deinem Hintergrund und deinen Zielen.">Tell us about your background and goals.</div>
-          <div class="step" data-en="Explore suitable Ausbildung fields." data-de="Entdecke passende Ausbildungsbereiche.">Explore suitable Ausbildung fields.</div>
-          <div class="step" data-en="Prepare your application documents." data-de="Bereite deine Bewerbungsunterlagen vor.">Prepare your application documents.</div>
-          <div class="step" data-en="Connect with suitable opportunities." data-de="Verbinde dich mit passenden Möglichkeiten.">Connect with suitable opportunities.</div>
-          <div class="step" data-en="Continue with realistic next steps." data-de="Gehe realistische nächste Schritte.">Continue with realistic next steps.</div>
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section soft" id="about">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="About Azubifly" data-de="Über Azubifly">About Azubifly</span>
+          <h2 data-en="A friendly bridge between global talent and German employers" data-de="Eine Brücke zwischen internationalen Talenten und deutschen Unternehmen">A friendly bridge between global talent and German employers</h2>
+        </div>
+        <div class="tldr">
+          <b data-en="In short:" data-de="Kurz gesagt:">In short:</b>
+          <span data-en="Germany needs trainees and many young people abroad want a real opportunity. Azubifly connects the two sides with clear information and honest guidance." data-de="Deutschland braucht Azubis und viele junge Menschen im Ausland suchen eine echte Chance. Azubifly verbindet beide Seiten mit klaren Informationen und ehrlicher Beratung.">Germany needs trainees and many young people abroad want a real opportunity. Azubifly connects the two sides with clear information and honest guidance.</span>
+        </div>
+        <div class="grid g2">
+          <div class="card">
+            <h3 data-en="Who we are" data-de="Wer wir sind">Who we are</h3>
+            <p data-en="Azubifly is a small, people-first team based in Cologne. We explain the German Ausbildung system in simple language and help applicants and companies take realistic next steps together.">Azubifly is a small, people-first team based in Cologne. We explain the German Ausbildung system in simple language and help applicants and companies take realistic next steps together.</p>
+          </div>
+          <div class="card">
+            <h3 data-en="The problem we solve" data-de="Das Problem, das wir lösen">The problem we solve</h3>
+            <p data-en="The process can feel confusing from abroad: unclear rules, language barriers and lots of paperwork. We make it understandable, step by step, so good people are not lost in the system.">The process can feel confusing from abroad: unclear rules, language barriers and lots of paperwork. We make it understandable, step by step, so good people are not lost in the system.</p>
+          </div>
+          <div class="card">
+            <h3 data-en="Why Germany needs international trainees" data-de="Warum Deutschland internationale Azubis braucht">Why Germany needs international trainees</h3>
+            <p data-en="Many German companies cannot fill all their training places. International talent helps close that gap — and gets a real, paid career start in return.">Many German companies cannot fill all their training places. International talent helps close that gap — and gets a real, paid career start in return.</p>
+          </div>
+          <div class="card">
+            <h3 data-en="Why Ausbildung is a strong opportunity" data-de="Warum die Ausbildung eine starke Chance ist">Why Ausbildung is a strong opportunity</h3>
+            <p data-en="You earn money while you learn, gain a recognized qualification, and build a career inside a real company — without large university fees.">You earn money while you learn, gain a recognized qualification, and build a career inside a real company — without large university fees.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3 data-en="For companies" data-de="Für Unternehmen">For companies</h3>
-        <div class="steps">
-          <div class="step" data-en="Tell us your hiring needs." data-de="Teilen Sie uns Ihren Bedarf mit.">Tell us your hiring needs.</div>
-          <div class="step" data-en="Define candidate requirements." data-de="Definieren Sie die Anforderungen an Bewerber.">Define candidate requirements.</div>
-          <div class="step" data-en="Reach international applicants." data-de="Erreichen Sie internationale Bewerber.">Reach international applicants.</div>
-          <div class="step" data-en="Review interested candidates." data-de="Prüfen Sie interessierte Kandidaten.">Review interested candidates.</div>
-          <div class="step" data-en="Continue the matching process." data-de="Führen Sie den Matching-Prozess fort.">Continue the matching process.</div>
+    <!-- ===================== WHY GERMANY ===================== -->
+    <section class="section dark">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Why Germany?" data-de="Warum Deutschland?">Why Germany?</span>
+          <h2 data-en="A safe place to learn, earn and grow" data-de="Ein sicherer Ort zum Lernen, Verdienen und Wachsen">A safe place to learn, earn and grow</h2>
+        </div>
+        <div class="grid g4">
+          <div class="card">
+            <div class="ico">💶</div>
+            <h3 data-en="Get paid to learn" data-de="Bezahlt lernen">Get paid to learn</h3>
+            <p data-en="Trainees receive a monthly salary that usually grows each year.">Trainees receive a monthly salary that usually grows each year.</p>
+          </div>
+          <div class="card">
+            <div class="ico">🎓</div>
+            <h3 data-en="Recognized qualification" data-de="Anerkannter Abschluss">Recognized qualification</h3>
+            <p data-en="You finish with a respected, job-ready professional certificate.">You finish with a respected, job-ready professional certificate.</p>
+          </div>
+          <div class="card">
+            <div class="ico">🛠️</div>
+            <h3 data-en="Real work experience" data-de="Echte Praxis">Real work experience</h3>
+            <p data-en="You learn inside a real company from day one, not only in a classroom.">You learn inside a real company from day one, not only in a classroom.</p>
+          </div>
+          <div class="card">
+            <div class="ico">🚀</div>
+            <h3 data-en="A future in Germany" data-de="Zukunft in Deutschland">A future in Germany</h3>
+            <p data-en="Many trainees continue working in Germany after they finish.">Many trainees continue working in Germany after they finish.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="soft">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="Services" data-de="Services">Services</h2>
-      <p data-en="Azubifly supports orientation, communication and matching. We do not make unrealistic promises." data-de="Azubifly unterstützt bei Orientierung, Kommunikation und Matching. Wir machen keine unrealistischen Versprechen.">Azubifly supports orientation, communication and matching. We do not make unrealistic promises.</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3 data-en="Applicant support" data-de="Unterstützung für Bewerber">Applicant support</h3>
-        <ul>
-          <li data-en="Career orientation" data-de="Berufliche Orientierung">Career orientation</li>
-          <li data-en="Ausbildung explanation" data-de="Erklärung des Ausbildungssystems">Ausbildung explanation</li>
-          <li data-en="CV and application guidance" data-de="Lebenslauf- und Bewerbungshilfe">CV and application guidance</li>
-          <li data-en="Interview preparation" data-de="Vorbereitung auf Gespräche">Interview preparation</li>
-          <li data-en="Document guidance" data-de="Orientierung bei Unterlagen">Document guidance</li>
-          <li data-en="Connection with suitable companies" data-de="Kontakt zu passenden Unternehmen">Connection with suitable companies</li>
-        </ul>
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="How it works" data-de="So läuft es ab">How it works</span>
+          <h2 data-en="Your journey in 8 clear steps" data-de="Dein Weg in 8 klaren Schritten">Your journey in 8 clear steps</h2>
+          <p data-en="A simple, honest path from your home country to your first day of training in Germany." data-de="Ein einfacher, ehrlicher Weg von deinem Heimatland bis zum ersten Ausbildungstag in Deutschland.">A simple, honest path from your home country to your first day of training in Germany.</p>
+        </div>
+        <div class="timeline">
+          <div class="tstep"><span class="tstep-n">1</span><h3 data-en="Check your eligibility" data-de="Eignung prüfen">Check your eligibility</h3><p data-en="We look at your age, school certificate, language and goals to see what is realistic.">We look at your age, school certificate, language and goals to see what is realistic.</p></div>
+          <div class="tstep"><span class="tstep-n">2</span><h3 data-en="Choose a training field" data-de="Berufsfeld wählen">Choose a training field</h3><p data-en="Together we find a field that fits your interests and where companies need people.">Together we find a field that fits your interests and where companies need people.</p></div>
+          <div class="tstep"><span class="tstep-n">3</span><h3 data-en="Prepare documents" data-de="Unterlagen vorbereiten">Prepare documents</h3><p data-en="Passport, school certificates, CV and translations — organized and ready.">Passport, school certificates, CV and translations — organized and ready.</p></div>
+          <div class="tstep"><span class="tstep-n">4</span><h3 data-en="Language preparation" data-de="Sprachvorbereitung">Language preparation</h3><p data-en="We guide you toward the German level most companies and schools expect.">We guide you toward the German level most companies and schools expect.</p></div>
+          <div class="tstep"><span class="tstep-n">5</span><h3 data-en="Application support" data-de="Bewerbungshilfe">Application support</h3><p data-en="We help you present yourself well and connect you with suitable companies.">We help you present yourself well and connect you with suitable companies.</p></div>
+          <div class="tstep"><span class="tstep-n">6</span><h3 data-en="Visa preparation" data-de="Visum vorbereiten">Visa preparation</h3><p data-en="We explain the visa basics so you can apply at the German embassy in your country.">We explain the visa basics so you can apply at the German embassy in your country.</p></div>
+          <div class="tstep"><span class="tstep-n">7</span><h3 data-en="Arrival in Germany" data-de="Ankunft in Deutschland">Arrival in Germany</h3><p data-en="Tips for your first weeks: registration, housing and getting settled.">Tips for your first weeks: registration, housing and getting settled.</p></div>
+          <div class="tstep"><span class="tstep-n">8</span><h3 data-en="Start your Ausbildung" data-de="Ausbildung beginnen">Start your Ausbildung</h3><p data-en="Begin paid training, earn your qualification and build your career.">Begin paid training, earn your qualification and build your career.</p></div>
+        </div>
+        <div style="text-align:center; margin-top:34px;">
+          <a class="btn btn-blue" href="#contact" data-en="Start step 1 — talk to us" data-de="Schritt 1 starten — schreib uns">Start step 1 — talk to us</a>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3 data-en="Company support" data-de="Unterstützung für Unternehmen">Company support</h3>
-        <ul>
-          <li data-en="Candidate outreach" data-de="Bewerberansprache">Candidate outreach</li>
-          <li data-en="Pre-orientation of applicants" data-de="Vororientierung von Bewerbern">Pre-orientation of applicants</li>
-          <li data-en="Employer presentation" data-de="Unternehmenspräsentation">Employer presentation</li>
-          <li data-en="International communication support" data-de="Unterstützung bei internationaler Kommunikation">International communication support</li>
-          <li data-en="Matching support" data-de="Unterstützung beim Matching">Matching support</li>
-          <li data-en="Candidate pipeline building" data-de="Aufbau einer Bewerber-Pipeline">Candidate pipeline building</li>
-        </ul>
+    <!-- ===================== AUSBILDUNG EXPLAINED ===================== -->
+    <section class="section soft" id="ausbildung">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Ausbildung in Germany" data-de="Ausbildung in Deutschland">Ausbildung in Germany</span>
+          <h2 data-en="What is an Ausbildung?" data-de="Was ist eine Ausbildung?">What is an Ausbildung?</h2>
+        </div>
+        <div class="tldr">
+          <b data-en="Definition:" data-de="Definition:">Definition:</b>
+          <span data-en="An Ausbildung is Germany's vocational training system. It combines paid practical work in a company with classes at a vocational school. After 2 to 3.5 years you earn a recognized professional qualification." data-de="Eine Ausbildung ist das deutsche System der beruflichen Ausbildung. Sie verbindet bezahlte praktische Arbeit im Unternehmen mit Unterricht in der Berufsschule. Nach 2 bis 3,5 Jahren erhältst du einen anerkannten Berufsabschluss.">An Ausbildung is Germany's vocational training system. It combines paid practical work in a company with classes at a vocational school. After 2 to 3.5 years you earn a recognized professional qualification.</span>
+        </div>
+
+        <h3 style="text-align:center; margin:10px 0 20px;" data-en="School vs. University vs. Ausbildung" data-de="Schule vs. Universität vs. Ausbildung">School vs. University vs. Ausbildung</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-en="Feature" data-de="Merkmal">Feature</th>
+                <th data-en="School only" data-de="Nur Schule">School only</th>
+                <th data-en="University" data-de="Universität">University</th>
+                <th class="col-hl" data-en="Ausbildung" data-de="Ausbildung">Ausbildung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th data-en="Main focus" data-de="Schwerpunkt">Main focus</th><td data-en="General education" data-de="Allgemeinbildung">General education</td><td data-en="Academic theory" data-de="Akademische Theorie">Academic theory</td><td class="col-hl" data-en="Practical job skills" data-de="Praktische Berufspraxis">Practical job skills</td></tr>
+              <tr><th data-en="Get paid?" data-de="Bezahlung?">Get paid?</th><td data-en="No" data-de="Nein">No</td><td data-en="Usually no" data-de="Meistens nein">Usually no</td><td class="col-hl" data-en="Yes, monthly salary" data-de="Ja, monatliche Vergütung">Yes, monthly salary</td></tr>
+              <tr><th data-en="Where you learn" data-de="Lernort">Where you learn</th><td data-en="Classroom" data-de="Klassenzimmer">Classroom</td><td data-en="Lectures & campus" data-de="Vorlesungen & Campus">Lectures &amp; campus</td><td class="col-hl" data-en="Company + vocational school" data-de="Unternehmen + Berufsschule">Company + vocational school</td></tr>
+              <tr><th data-en="Typical length" data-de="Dauer">Typical length</th><td data-en="Several years" data-de="Mehrere Jahre">Several years</td><td data-en="3–5 years" data-de="3–5 Jahre">3–5 years</td><td class="col-hl" data-en="2–3.5 years" data-de="2–3,5 Jahre">2–3.5 years</td></tr>
+              <tr><th data-en="Result" data-de="Ergebnis">Result</th><td data-en="School certificate" data-de="Schulabschluss">School certificate</td><td data-en="Academic degree" data-de="Akademischer Abschluss">Academic degree</td><td class="col-hl" data-en="Job-ready qualification" data-de="Berufsabschluss">Job-ready qualification</td></tr>
+              <tr><th data-en="Best for" data-de="Gut für">Best for</th><td data-en="Younger students" data-de="Jüngere Schüler">Younger students</td><td data-en="Theory lovers" data-de="Theorie-Fans">Theory lovers</td><td class="col-hl" data-en="Hands-on learners" data-de="Praktische Lerntypen">Hands-on learners</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid g3" style="margin-top:24px;">
+          <div class="card"><div class="ico warm">💶</div><h3 data-en="Salary" data-de="Vergütung">Salary</h3><p data-en="Trainees earn a monthly training salary that usually rises each year. The amount depends on the profession, region and company.">Trainees earn a monthly training salary that usually rises each year. The amount depends on the profession, region and company.</p></div>
+          <div class="card"><div class="ico warm">⏳</div><h3 data-en="Duration" data-de="Dauer">Duration</h3><p data-en="Most programs last 2 to 3.5 years. Strong performance can sometimes shorten the time.">Most programs last 2 to 3.5 years. Strong performance can sometimes shorten the time.</p></div>
+          <div class="card"><div class="ico warm">📈</div><h3 data-en="After Ausbildung" data-de="Nach der Ausbildung">After Ausbildung</h3><p data-en="You can keep working in your company, specialize further, or build toward higher qualifications.">You can keep working in your company, specialize further, or build toward higher qualifications.</p></div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section>
-  <div class="container grid-2">
-    <div class="section-title">
-      <h2 data-en="Pricing" data-de="Preise">Pricing</h2>
-      <p data-en="We do not show fixed prices on the website because every company has different needs." data-de="Wir zeigen auf der Website keine festen Preise, weil jedes Unternehmen unterschiedliche Anforderungen hat.">We do not show fixed prices on the website because every company has different needs.</p>
-    </div>
+    <!-- ===================== REQUIREMENTS ===================== -->
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Requirements" data-de="Voraussetzungen">Requirements</span>
+          <h2 data-en="What you usually need to apply" data-de="Was du in der Regel brauchst">What you usually need to apply</h2>
+          <p data-en="Every profession and company is different, so treat this as a general checklist — not a fixed rulebook." data-de="Jeder Beruf und jedes Unternehmen ist anders — sieh dies als allgemeine Checkliste, nicht als feste Regel.">Every profession and company is different, so treat this as a general checklist — not a fixed rulebook.</p>
+        </div>
+        <div class="check">
+          <div class="check-item"><div class="b">1</div><div><strong data-en="Age" data-de="Alter">Age</strong><span data-en="Usually around 16+, with some roles preferring 18+. There is no strict upper age limit for most fields.">Usually around 16+, with some roles preferring 18+. There is no strict upper age limit for most fields.</span></div></div>
+          <div class="check-item"><div class="b">2</div><div><strong data-en="School certificate" data-de="Schulabschluss">School certificate</strong><span data-en="A completed school certificate from your home country. Some professions ask for specific subjects or grades.">A completed school certificate from your home country. Some professions ask for specific subjects or grades.</span></div></div>
+          <div class="check-item"><div class="b">3</div><div><strong data-en="German language level" data-de="Deutschniveau">German language level</strong><span data-en="Often B1 to B2, because training and daily work are mostly in German. Some technical roles are more flexible.">Often B1 to B2, because training and daily work are mostly in German. Some technical roles are more flexible.</span></div></div>
+          <div class="check-item"><div class="b">4</div><div><strong data-en="Motivation" data-de="Motivation">Motivation</strong><span data-en="A clear, honest reason for choosing your field. Companies value reliable, motivated trainees.">A clear, honest reason for choosing your field. Companies value reliable, motivated trainees.</span></div></div>
+          <div class="check-item"><div class="b">5</div><div><strong data-en="Documents" data-de="Unterlagen">Documents</strong><span data-en="Valid passport, certificates with certified translations, a CV, and language certificates.">Valid passport, certificates with certified translations, a CV, and language certificates.</span></div></div>
+          <div class="check-item"><div class="b">6</div><div><strong data-en="Visa basics" data-de="Visum-Grundlagen">Visa basics</strong><span data-en="If you live outside the EU you usually need a national visa for vocational training before you arrive. Always confirm with the German embassy in your country.">If you live outside the EU you usually need a national visa for vocational training before you arrive. Always confirm with the German embassy in your country.</span></div></div>
+        </div>
+        <div class="tldr left" style="margin-top:28px;">
+          <b data-en="Not sure if you qualify?" data-de="Unsicher, ob du passt?">Not sure if you qualify?</b>
+          <span data-en="That is normal. Tell us your situation and we will give you an honest answer about your options." data-de="Das ist normal. Erzähl uns deine Situation und wir geben dir eine ehrliche Einschätzung deiner Möglichkeiten.">That is normal. Tell us your situation and we will give you an honest answer about your options.</span>
+          <a href="#contact" style="color:var(--blue); font-weight:700;" data-en="→ Contact us" data-de="→ Kontakt aufnehmen"> → Contact us</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3 data-en="Individual solutions" data-de="Individuelle Lösungen">Individual solutions</h3>
-      <p data-en="Pricing depends on the type of support and the needs of each company. Please contact us to discuss the right solution. Applicants can contact Azubifly first to learn more about the process." data-de="Die Preisstruktur hängt vom Unterstützungsumfang und vom Bedarf des jeweiligen Unternehmens ab. Kontaktieren Sie uns gerne für eine passende Lösung. Bewerber können Azubifly zunächst kontaktieren, um mehr über den Prozess zu erfahren.">
-        Pricing depends on the type of support and the needs of each company. Please contact us to discuss the right solution. Applicants can contact Azubifly first to learn more about the process.
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- ===================== TRAINING FIELDS ===================== -->
+    <section class="section soft" id="fields">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Training Fields" data-de="Berufsfelder">Training Fields</span>
+          <h2 data-en="Popular Ausbildung fields in Germany" data-de="Beliebte Ausbildungsbereiche in Deutschland">Popular Ausbildung fields in Germany</h2>
+          <p data-en="Companies across these fields look for motivated trainees. Demand changes by region, company and year." data-de="Unternehmen in diesen Bereichen suchen motivierte Azubis. Die Nachfrage ändert sich je nach Region, Unternehmen und Jahr.">Companies across these fields look for motivated trainees. Demand changes by region, company and year.</p>
+        </div>
+        <div class="grid g4">
+          <div class="card"><span class="tag">Healthcare</span><h3 data-en="Healthcare & care" data-de="Gesundheit & Pflege">Healthcare &amp; care</h3><p data-en="Example roles: nursing assistant, medical assistant, dental assistant, care support.">Example roles: nursing assistant, medical assistant, dental assistant, care support.</p></div>
+          <div class="card"><span class="tag">Hospitality</span><h3 data-en="Hospitality" data-de="Hotellerie & Gastronomie">Hospitality</h3><p data-en="Example roles: hotel specialist, restaurant specialist, cook, kitchen and service.">Example roles: hotel specialist, restaurant specialist, cook, kitchen and service.</p></div>
+          <div class="card"><span class="tag warm">IT</span><h3 data-en="IT & digital" data-de="IT & Digitales">IT &amp; digital</h3><p data-en="Example roles: IT specialist, software support, system integration, digital media.">Example roles: IT specialist, software support, system integration, digital media.</p></div>
+          <div class="card"><span class="tag">Logistics</span><h3 data-en="Logistics" data-de="Logistik">Logistics</h3><p data-en="Example roles: warehouse logistics, supply chain support, transport, professional driving.">Example roles: warehouse logistics, supply chain support, transport, professional driving.</p></div>
+          <div class="card"><span class="tag">Retail</span><h3 data-en="Retail & sales" data-de="Handel & Verkauf">Retail &amp; sales</h3><p data-en="Example roles: retail salesperson, e-commerce, customer advice, store operations.">Example roles: retail salesperson, e-commerce, customer advice, store operations.</p></div>
+          <div class="card"><span class="tag">Technical</span><h3 data-en="Technical & industrial" data-de="Technik & Industrie">Technical &amp; industrial</h3><p data-en="Example roles: mechatronics, electronics, metalwork, machine and plant operation.">Example roles: mechatronics, electronics, metalwork, machine and plant operation.</p></div>
+          <div class="card"><span class="tag warm">Trades</span><h3 data-en="Skilled trades" data-de="Handwerk">Skilled trades</h3><p data-en="Example roles: plumbing, heating and air conditioning, construction, craft professions.">Example roles: plumbing, heating and air conditioning, construction, craft professions.</p></div>
+          <div class="card"><span class="tag">Office</span><h3 data-en="Office & business" data-de="Büro & Verwaltung">Office &amp; business</h3><p data-en="Example roles: office management, customer service, accounting support, administration.">Example roles: office management, customer service, accounting support, administration.</p></div>
+        </div>
+      </div>
+    </section>
 
-<section class="soft" id="faq">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="Frequently asked questions" data-de="Häufige Fragen">Frequently asked questions</h2>
-      <p data-en="Clear answers for applicants and companies." data-de="Klare Antworten für Bewerber und Unternehmen.">Clear answers for applicants and companies.</p>
-    </div>
+    <!-- ===================== FOR COMPANIES ===================== -->
+    <section class="section dark" id="companies">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="For Companies" data-de="Für Unternehmen">For Companies</span>
+          <h2 data-en="Find motivated international trainees" data-de="Finden Sie motivierte internationale Azubis">Find motivated international trainees</h2>
+          <p data-en="Cannot fill your training places? Azubifly helps you reach and pre-orient international applicants who want to build a future with you." data-de="Sie können Ihre Ausbildungsplätze nicht besetzen? Azubifly hilft Ihnen, internationale Bewerber zu erreichen und vorzubereiten.">Cannot fill your training places? Azubifly helps you reach and pre-orient international applicants who want to build a future with you.</p>
+        </div>
+        <div class="grid g3">
+          <div class="card"><h3 data-en="Reach motivated candidates" data-de="Motivierte Bewerber erreichen">Reach motivated candidates</h3><p data-en="Access international applicants who are genuinely interested in vocational training.">Access international applicants who are genuinely interested in vocational training.</p></div>
+          <div class="card"><h3 data-en="Save time early on" data-de="Früh Zeit sparen">Save time early on</h3><p data-en="We pre-orient applicants so first conversations are clearer and more productive.">We pre-orient applicants so first conversations are clearer and more productive.</p></div>
+          <div class="card"><h3 data-en="Build a trainee pipeline" data-de="Azubi-Pipeline aufbauen">Build a trainee pipeline</h3><p data-en="Develop a steady, international source of future trainees for your business.">Develop a steady, international source of future trainees for your business.</p></div>
+        </div>
+        <div style="text-align:center; margin-top:34px;">
+          <a class="btn btn-primary" href="#contact" data-en="Talk to us about hiring" data-de="Über Einstellung sprechen">Talk to us about hiring</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="grid-2">
-      <div>
-        <h3 style="margin-bottom: 14px;" data-en="For applicants" data-de="Für Bewerber">For applicants</h3>
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="FAQ" data-de="FAQ">FAQ</span>
+          <h2 data-en="Frequently asked questions" data-de="Häufige Fragen">Frequently asked questions</h2>
+          <p data-en="Clear, honest answers about Ausbildung in Germany." data-de="Klare, ehrliche Antworten zur Ausbildung in Deutschland.">Clear, honest answers about Ausbildung in Germany.</p>
+        </div>
         <div class="faq">
-          <details>
-            <summary data-en="What is an Ausbildung?" data-de="Was ist eine Ausbildung?">What is an Ausbildung?</summary>
-            <p data-en="It is a German vocational training program that combines practical work in a company with learning at a vocational school." data-de="Eine Ausbildung ist eine berufliche Qualifizierung in Deutschland, die praktische Arbeit im Unternehmen mit Unterricht in der Berufsschule verbindet.">It is a German vocational training program that combines practical work in a company with learning at a vocational school.</p>
-          </details>
-
-          <details>
-            <summary data-en="Can foreigners apply for Ausbildung in Germany?" data-de="Können Ausländer eine Ausbildung in Deutschland machen?">Can foreigners apply for Ausbildung in Germany?</summary>
-            <p data-en="Yes, international applicants may apply. Requirements depend on the profession, company, language level and personal situation." data-de="Ja, internationale Bewerber können sich bewerben. Die Voraussetzungen hängen vom Beruf, Unternehmen, Sprachniveau und der persönlichen Situation ab.">Yes, international applicants may apply. Requirements depend on the profession, company, language level and personal situation.</p>
-          </details>
-
-          <details>
-            <summary data-en="Do I need German language skills?" data-de="Brauche ich Deutschkenntnisse?">Do I need German language skills?</summary>
-            <p data-en="Usually yes. Many companies and vocational schools require German language skills because training and daily work are often in German." data-de="Meistens ja. Viele Unternehmen und Berufsschulen erwarten Deutschkenntnisse, weil Ausbildung und Arbeitsalltag häufig auf Deutsch stattfinden.">Usually yes. Many companies and vocational schools require German language skills because training and daily work are often in German.</p>
-          </details>
-
-          <details>
-            <summary data-en="Can Azubifly guarantee a job or visa?" data-de="Kann Azubifly einen Job oder ein Visum garantieren?">Can Azubifly guarantee a job or visa?</summary>
-            <p data-en="No. Azubifly supports the process, but jobs, visas and residence permits cannot be guaranteed." data-de="Nein. Azubifly unterstützt den Prozess, aber Jobs, Visa und Aufenthaltstitel können nicht garantiert werden.">No. Azubifly supports the process, but jobs, visas and residence permits cannot be guaranteed.</p>
-          </details>
+          <details open><summary data-en="What is Ausbildung in Germany?" data-de="Was ist eine Ausbildung in Deutschland?">What is Ausbildung in Germany?</summary><p>Ausbildung is Germany's vocational training system. It combines paid practical work in a company with classes at a vocational school. After 2 to 3.5 years you earn a recognized professional qualification.</p></details>
+          <details><summary data-en="Can foreigners do Ausbildung in Germany?" data-de="Können Ausländer eine Ausbildung in Deutschland machen?">Can foreigners do Ausbildung in Germany?</summary><p>Yes. International applicants can do an Ausbildung in Germany. The exact requirements depend on the profession, the company, your language level, your country of origin and your personal situation.</p></details>
+          <details><summary data-en="Do I need German language skills?" data-de="Brauche ich Deutschkenntnisse?">Do I need German language skills?</summary><p>Usually yes. Many companies and vocational schools ask for German at around B1 to B2 level, because training and daily work mostly happen in German. Some technical and IT roles can be more flexible.</p></details>
+          <details><summary data-en="Do I get paid during Ausbildung?" data-de="Werde ich während der Ausbildung bezahlt?">Do I get paid during Ausbildung?</summary><p>Yes, in most cases. Trainees receive a monthly training salary that usually increases each year. The exact amount depends on the profession, region and company.</p></details>
+          <details><summary data-en="How long does Ausbildung take?" data-de="Wie lange dauert eine Ausbildung?">How long does Ausbildung take?</summary><p>Most Ausbildung programs take 2 to 3.5 years, depending on the profession. Strong performance can sometimes shorten the duration.</p></details>
+          <details><summary data-en="Can I stay in Germany after Ausbildung?" data-de="Kann ich nach der Ausbildung in Deutschland bleiben?">Can I stay in Germany after Ausbildung?</summary><p>Often yes. Many people who complete an Ausbildung continue working in Germany, and there are residence options for qualified workers. The exact rules depend on your situation and current German law.</p></details>
+          <details><summary data-en="What documents do I need?" data-de="Welche Unterlagen brauche ich?">What documents do I need?</summary><p>Typically a valid passport, your school certificates (often with certified translations), a CV, language certificates, and the company training contract. The exact list depends on the profession and your country.</p></details>
+          <details><summary data-en="Do I need a visa?" data-de="Brauche ich ein Visum?">Do I need a visa?</summary><p>If you live outside the EU, you usually need a national visa for vocational training before you arrive. Requirements depend on your nationality and personal situation, so always check with the German embassy in your country.</p></details>
+          <details><summary data-en="Is Ausbildung the same as university?" data-de="Ist eine Ausbildung dasselbe wie ein Studium?">Is Ausbildung the same as university?</summary><p>No. University is mostly academic study with little or no pay. Ausbildung is practical, paid training inside a real company combined with vocational school, leading to a job-ready qualification.</p></details>
+          <details><summary data-en="Which Ausbildung jobs are popular in Germany?" data-de="Welche Ausbildungsberufe sind in Deutschland gefragt?">Which Ausbildung jobs are popular in Germany?</summary><p>In-demand fields include healthcare and nursing, hospitality, IT, logistics, retail, technical and industrial professions, skilled trades, and office and business roles. Demand varies by region and year.</p></details>
         </div>
       </div>
+    </section>
 
-      <div>
-        <h3 style="margin-bottom: 14px;" data-en="For companies" data-de="Für Unternehmen">For companies</h3>
-        <div class="faq">
-          <details>
-            <summary data-en="Can Azubifly help us find international applicants?" data-de="Kann Azubifly helfen, internationale Bewerber zu finden?">Can Azubifly help us find international applicants?</summary>
-            <p data-en="Yes. Azubifly helps companies reach international applicants and present Ausbildung opportunities clearly." data-de="Ja. Azubifly hilft Unternehmen, internationale Bewerber zu erreichen und Ausbildungsangebote klar zu präsentieren.">Yes. Azubifly helps companies reach international applicants and present Ausbildung opportunities clearly.</p>
-          </details>
+    <!-- ===================== CONTACT / APPLY ===================== -->
+    <section class="section soft" id="contact">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow" data-en="Contact & Apply" data-de="Kontakt & Bewerbung">Contact &amp; Apply</span>
+          <h2 data-en="Ready to take the first step?" data-de="Bereit für den ersten Schritt?">Ready to take the first step?</h2>
+          <p data-en="Tell us a little about yourself. We reply with honest, friendly guidance — no pressure." data-de="Erzähl uns ein wenig über dich. Wir antworten mit ehrlicher, freundlicher Beratung — ganz ohne Druck.">Tell us a little about yourself. We reply with honest, friendly guidance — no pressure.</p>
+        </div>
 
-          <details>
-            <summary data-en="Which industries can Azubifly support?" data-de="Welche Branchen kann Azubifly unterstützen?">Which industries can Azubifly support?</summary>
-            <p data-en="Azubifly can support companies in healthcare, hospitality, technical fields, skilled trades, logistics, retail, food and office-related roles." data-de="Azubifly kann Unternehmen in Gesundheit, Hotellerie, Technik, Handwerk, Logistik, Handel, Lebensmittel und Büro unterstützen.">Azubifly can support companies in healthcare, hospitality, technical fields, skilled trades, logistics, retail, food and office-related roles.</p>
-          </details>
+        <div class="contact-grid">
+          <!-- CONTACT FORM
+               By default this opens the visitor's email app (works on any static host).
+               To collect submissions automatically, replace the JS in submitForm()
+               with a service like Formspree: set the <form> action to your endpoint
+               and method="POST", then remove the onsubmit handler. -->
+          <div class="card">
+            <form id="contactForm" onsubmit="return submitForm(event)">
+              <div class="field">
+                <label for="name" data-en="Your name" data-de="Dein Name">Your name</label>
+                <input type="text" id="name" name="name" required placeholder="Maria, Ahmed, ..." />
+              </div>
+              <div class="field">
+                <label for="email" data-en="Your email" data-de="Deine E-Mail">Your email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="role" data-en="I am a..." data-de="Ich bin...">I am a...</label>
+                <select id="role" name="role">
+                  <option data-en="Candidate (I want an Ausbildung)" data-de="Bewerber (ich möchte eine Ausbildung)">Candidate (I want an Ausbildung)</option>
+                  <option data-en="Family member" data-de="Familienmitglied">Family member</option>
+                  <option data-en="Company / employer" data-de="Unternehmen / Arbeitgeber">Company / employer</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message" data-en="Your message" data-de="Deine Nachricht">Your message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your background, goals or open positions."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;" data-en="Send my message" data-de="Nachricht senden">Send my message</button>
+              <p style="font-size:.82rem; color:var(--muted); margin-top:12px;" data-en="We never share your details. Azubifly gives guidance and support but does not guarantee jobs, visas or residence permits." data-de="Wir geben deine Daten nie weiter. Azubifly bietet Beratung und Unterstützung, garantiert jedoch keine Jobs, Visa oder Aufenthaltstitel.">We never share your details. Azubifly gives guidance and support but does not guarantee jobs, visas or residence permits.</p>
+            </form>
+          </div>
 
-          <details>
-            <summary data-en="Do you show fixed prices?" data-de="Gibt es feste Preise?">Do you show fixed prices?</summary>
-            <p data-en="No. Pricing depends on the type of support and the company’s needs." data-de="Nein. Die Preisstruktur hängt vom Unterstützungsumfang und vom Bedarf des Unternehmens ab.">No. Pricing depends on the type of support and the company’s needs.</p>
-          </details>
-
-          <details>
-            <summary data-en="Does Azubifly handle the entire legal process?" data-de="Übernimmt Azubifly den kompletten rechtlichen Prozess?">Does Azubifly handle the entire legal process?</summary>
-            <p data-en="No. Legal and visa requirements depend on the applicant’s country and personal situation. Azubifly provides guidance, not legal guarantees." data-de="Nein. Rechtliche und visabezogene Anforderungen hängen vom Herkunftsland und der persönlichen Situation ab. Azubifly bietet Orientierung, aber keine rechtlichen Garantien.">No. Legal and visa requirements depend on the applicant’s country and personal situation. Azubifly provides guidance, not legal guarantees.</p>
-          </details>
+          <!-- CONTACT INFO — replace email & address with your real details -->
+          <div class="contact-info">
+            <div class="ci"><div class="ico">✉️</div><div><strong data-en="Email" data-de="E-Mail">Email</strong><br><a href="mailto:ms@multikultur.net">ms@multikultur.net</a></div></div>
+            <div class="ci"><div class="ico">📍</div><div><strong data-en="Address" data-de="Adresse">Address</strong><br><address>Azubifly<br>Helmholtzstraße 50<br>50825 Cologne (Ehrenfeld)<br>Germany</address></div></div>
+            <div class="ci"><div class="ico warm">🤝</div><div><strong data-en="A friendly note" data-de="Eine freundliche Notiz">A friendly note</strong><br><span data-en="Wherever you are in the world, your message is welcome. We answer in clear English or German." data-de="Egal wo auf der Welt du bist — deine Nachricht ist willkommen. Wir antworten auf klarem Englisch oder Deutsch.">Wherever you are in the world, your message is welcome. We answer in clear English or German.</span></div></div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="contact">
-  <div class="container">
-    <div class="cta">
-      <div>
-        <h2 data-en="Ready to start?" data-de="Bereit für den nächsten Schritt?">Ready to start?</h2>
-        <p data-en="Contact Azubifly to discuss the next step as an applicant or as a company looking for international trainees." data-de="Kontaktieren Sie Azubifly, um den nächsten Schritt als Bewerber oder als Unternehmen mit Interesse an internationalen Azubis zu besprechen.">Contact Azubifly to discuss the next step as an applicant or as a company looking for international trainees.</p>
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section tight">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2 data-en="Your future in Germany can start today" data-de="Deine Zukunft in Deutschland kann heute beginnen">Your future in Germany can start today</h2>
+            <p data-en="Take the first small step. Ask a question, share your goal, or tell us about your open positions." data-de="Mach den ersten kleinen Schritt. Stelle eine Frage, teile dein Ziel oder erzähl uns von deinen offenen Stellen.">Take the first small step. Ask a question, share your goal, or tell us about your open positions.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#contact" data-en="Apply now" data-de="Jetzt bewerben">Apply now</a>
+            <a class="btn btn-light" href="#how" data-en="How it works" data-de="So funktioniert es">How it works</a>
+          </div>
+        </div>
       </div>
-
-      <div class="cta-actions">
-        <a class="btn btn-secondary" href="mailto:ms@multikultur?subject=Applicant%20request%20-%20Azubifly" data-en="I am an applicant" data-de="Ich bin Bewerber">I am an applicant</a>
-        <a class="btn btn-secondary" href="mailto:ms@multikultur?subject=Company%20request%20-%20Azubifly" data-en="I am a company" data-de="Ich bin Unternehmen">I am a company</a>
-      </div>
-    </div>
-  </div>
-</section>
-```
-
+    </section>
   </main>
 
+  <!-- ===================== FOOTER ===================== -->
   <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="logo" style="color:white;">Azubi<span>fly</span></div>
-        <p data-en="Connecting international applicants with Ausbildung opportunities in Germany." data-de="Wir verbinden internationale Bewerber mit Ausbildungsmöglichkeiten in Deutschland.">Connecting international applicants with Ausbildung opportunities in Germany.</p>
-        <p>Email: <a href="mailto:ms@multikultur">ms@multikultur</a></p>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="logo">Azubi<span>fly</span></div>
+          <p style="margin-top:10px; max-width:320px;" data-en="Helping international talent understand and start an Ausbildung in Germany — with clear steps and honest guidance." data-de="Wir helfen internationalen Talenten, eine Ausbildung in Deutschland zu verstehen und zu starten — mit klaren Schritten und ehrlicher Beratung.">Helping international talent understand and start an Ausbildung in Germany — with clear steps and honest guidance.</p>
+        </div>
+        <div>
+          <h4 data-en="Explore" data-de="Entdecken">Explore</h4>
+          <div class="fnav">
+            <a href="#about" data-en="About" data-de="Über uns">About</a>
+            <a href="#how" data-en="How it works" data-de="Ablauf">How it works</a>
+            <a href="#ausbildung" data-en="Ausbildung" data-de="Ausbildung">Ausbildung</a>
+            <a href="#fields" data-en="Training Fields" data-de="Berufsfelder">Training Fields</a>
+            <a href="#faq" data-en="FAQ" data-de="FAQ">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <h4 data-en="Contact" data-de="Kontakt">Contact</h4>
+          <div class="fnav">
+            <a href="mailto:ms@multikultur.net">ms@multikultur.net</a>
+            <address>Helmholtzstraße 50<br>50825 Cologne, Germany</address>
+            <a href="#contact" data-en="Apply now" data-de="Jetzt bewerben">Apply now</a>
+          </div>
+        </div>
       </div>
-
-```
-  <div>
-    <strong>Impressum</strong>
-    <address>
-      Rafael Bujara<br>
-      Helmholtzstraße 50<br>
-      50825 Ehrenfeld<br>
-      Germany
-    </address>
-  </div>
-</div>
-
-<div class="container legal-note"
-  data-en="Visa, residence and employment requirements depend on the applicant’s country, qualifications and personal situation. Azubifly provides guidance and support but does not guarantee jobs, visas or residence permits."
-  data-de="Visa-, Aufenthalts- und Beschäftigungsvoraussetzungen hängen vom Herkunftsland, den Qualifikationen und der persönlichen Situation des Bewerbers ab. Azubifly bietet Orientierung und Unterstützung, garantiert jedoch keine Jobs, Visa oder Aufenthaltstitel.">
-  Visa, residence and employment requirements depend on the applicant’s country, qualifications and personal situation. Azubifly provides guidance and support but does not guarantee jobs, visas or residence permits.
-</div>
-```
-
+      <p class="legal" data-en="Visa, residence and employment requirements depend on the applicant's country, qualifications and personal situation. Azubifly provides guidance and support but does not guarantee jobs, visas or residence permits. © 2025 Azubifly." data-de="Visa-, Aufenthalts- und Beschäftigungsvoraussetzungen hängen vom Herkunftsland, den Qualifikationen und der persönlichen Situation des Bewerbers ab. Azubifly bietet Orientierung und Unterstützung, garantiert jedoch keine Jobs, Visa oder Aufenthaltstitel. © 2025 Azubifly.">Visa, residence and employment requirements depend on the applicant's country, qualifications and personal situation. Azubifly provides guidance and support but does not guarantee jobs, visas or residence permits. © 2025 Azubifly.</p>
+    </div>
   </footer>
 
   <script>
-    function setLanguage(language) {
-      const elements = document.querySelectorAll("[data-en][data-de]");
-
-      elements.forEach((element) => {
-        element.textContent = element.getAttribute("data-" + language);
+    /* ---------- Language switcher (EN / DE) ---------- */
+    function setLanguage(lang){
+      document.querySelectorAll("[data-en][data-de]").forEach(function(el){
+        var val = el.getAttribute("data-" + lang);
+        if(val !== null) el.textContent = val;
       });
+      document.documentElement.lang = lang;
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+      document.getElementById("btn-de").classList.toggle("active", lang === "de");
 
-      document.documentElement.lang = language;
-
-      document.getElementById("btn-en").classList.toggle("active", language === "en");
-      document.getElementById("btn-de").classList.toggle("active", language === "de");
-
-      if (language === "de") {
+      if(lang === "de"){
         document.title = "Azubifly | Ausbildung in Deutschland für internationale Bewerber";
-        document.querySelector('meta[name="description"]').setAttribute(
-          "content",
-          "Azubifly hilft internationalen Bewerbern, das deutsche Ausbildungssystem zu verstehen, und verbindet sie mit Unternehmen, die Ausbildungsplätze anbieten."
-        );
+        document.querySelector('meta[name="description"]').setAttribute("content",
+          "Azubifly hilft jungen Menschen aus dem Ausland, eine Ausbildung in Deutschland zu verstehen und zu starten. Klare Schritte, ehrliche Beratung.");
       } else {
         document.title = "Azubifly | Ausbildung in Germany for International Applicants";
-        document.querySelector('meta[name="description"]').setAttribute(
-          "content",
-          "Azubifly helps international applicants understand the German Ausbildung system and connects them with companies offering vocational training opportunities in Germany."
-        );
+        document.querySelector('meta[name="description"]').setAttribute("content",
+          "Azubifly helps young people from abroad start an Ausbildung (vocational training) in Germany. Learn how it works, who can apply, and the steps to start your journey.");
       }
     }
-  </script>
 
+    /* ---------- Mobile menu ---------- */
+    function toggleMenu(){
+      var nav = document.getElementById("navlinks");
+      var btn = document.getElementById("menuBtn");
+      var open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    document.getElementById("navlinks").addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        this.classList.remove("open");
+        document.getElementById("menuBtn").setAttribute("aria-expanded","false");
+      }
+    });
+
+    /* ---------- Contact form (default: opens email app) ---------- */
+    function submitForm(e){
+      e.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var role = document.getElementById("role").value;
+      var msg  = document.getElementById("message").value;
+      var subject = encodeURIComponent("Azubifly enquiry — " + role);
+      var body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nRole: " + role + "\n\n" + msg);
+      // CHANGE this email to your real address:
+      window.location.href = "mailto:ms@multikultur.net?subject=" + subject + "&body=" + body;
+      return false;
+    }
+  </script>
 </body>
 </html>
